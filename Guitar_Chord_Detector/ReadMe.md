@@ -12,3 +12,14 @@ A pre-trained model was not used intentionally since the goal of this project wa
   2. Data Preprocessing
   3. Model Design and Creation
   4. Train / Test the Model   
+
+The file with the name **guitabot.py** is the code that was written to load the CNN model into a Raspberry Pi with the aim of using a webcam to make live detections and move 6 SG90 Servo Motors into a position that mimics what is being seen in the frames of the CNN. 
+
+Please note that you may (and probably will) need to update the ranges in which the servos move in the 'servos' dictionary.
+
+e.g. servos = {'1':[5,185],} 
+
+This is due to the fact that servos, even though they come from the same manufacturer, have different ranges of motion that vary slightly. This is physically translated in the fact that if you try to move different servos with the same settings, their movements will be slightly different (2-10 deg). The process to accurrately tune the ranges of motion was trial and error. 
+
+Enjoy!
+
